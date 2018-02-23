@@ -12,6 +12,7 @@
 		E303274C2038B70900762266 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E303274B2038B70900762266 /* ViewController.swift */; };
 		E303274E2038B70900762266 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E303274D2038B70900762266 /* Assets.xcassets */; };
 		E30327512038B70900762266 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E303274F2038B70900762266 /* Main.storyboard */; };
+		E3722BAD2040570300179A6C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E3722BAC2040570300179A6C /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		E303274D2038B70900762266 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E30327502038B70900762266 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E30327522038B70900762266 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3722BAC2040570300179A6C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		E303273D2038B70900762266 = {
 			isa = PBXGroup;
 			children = (
+				E3722BAC2040570300179A6C /* README.md */,
 				E30327482038B70900762266 /* CircleTicket */,
 				E30327472038B70900762266 /* Products */,
 				D5FA8EEBB1A2744EDD207ACC /* Pods */,
@@ -147,6 +150,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3722BAD2040570300179A6C /* README.md in Resources */,
 				E303274E2038B70900762266 /* Assets.xcassets in Resources */,
 				E30327512038B70900762266 /* Main.storyboard in Resources */,
 			);
