@@ -16,23 +16,11 @@ class ViewController: NSViewController {
     // View блока запуска сервера
     @IBOutlet weak var startServerView: NSView!
     // IP-адрес сервера
-    @IBOutlet weak var serverIPAddressStartServerTextField: NSTextField! {
-        willSet {
-            newValue.stringValue = "192.168.0.105"
-        }
-    }
+    @IBOutlet weak var serverIPAddressStartServerTextField: NSTextField!
     // IP-адрес получателя
-    @IBOutlet weak var recepientIPAddressStartServerTextField: NSTextField! {
-        willSet {
-            newValue.stringValue = "192.168.0.102"
-        }
-    }
+    @IBOutlet weak var recepientIPAddressStartServerTextField: NSTextField!
     // Номер порта
-    @IBOutlet weak var numOfPortStartServerTextField: NSTextField! {
-        willSet {
-            newValue.stringValue = "12345"
-        }
-    }
+    @IBOutlet weak var numOfPortStartServerTextField: NSTextField!
     // Кнопка "Запустить сервер"
     @IBOutlet weak var startServerButton: NSButton!
     // Кнопка "Остановить"
@@ -45,28 +33,20 @@ class ViewController: NSViewController {
     // View блока отправки тикета
     @IBOutlet weak var sendCircleTicketView: NSView!
     // IP-адрес сервера
-    @IBOutlet weak var serverIPAddressSendCircleTicketTextField: NSTextField! {
-        willSet {
-            newValue.stringValue = "192.168.0.105"
-        }
-    }
+    @IBOutlet weak var serverIPAddressSendCircleTicketTextField: NSTextField!
     // Номер порта
-    @IBOutlet weak var numOfPortSendCircleTicketrTextField: NSTextField! {
-        willSet {
-            newValue.stringValue = "12345"
-        }
-    }
+    @IBOutlet weak var numOfPortSendCircleTicketrTextField: NSTextField!
     // Стартовый тикет
-    @IBOutlet weak var startTicketTextField: NSTextField! {
-        willSet {
-            newValue.stringValue = "161"
-        }
-    }
+    @IBOutlet weak var startTicketTextField: NSTextField!
     // Кнопка "Отправить тикет"
     @IBOutlet weak var sendCircleTicketButton: NSButton!
     
     // Окно вывода логов
-    @IBOutlet weak var logScrollView: NSTextView!
+    @IBOutlet weak var logScrollView: NSTextView! {
+        willSet {
+            newValue.isEditable = false
+        }
+    }
     
     
     // MARK: - Приватные свойства
@@ -87,10 +67,6 @@ extension ViewController {
         
         configureBlocks()
         
-    }
-    
-    override func viewDidAppear() {
-        super.viewDidAppear()
     }
     
 }
